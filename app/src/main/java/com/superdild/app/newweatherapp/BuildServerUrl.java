@@ -11,7 +11,7 @@ import java.net.URL;
  */
 
 public class BuildServerUrl {
-    static private final String KEY = "0db29ec0d9a1ce7ebb55646823721251";
+    static private final String KEY = "";
     static private final String DEFAULT_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?";
     static private final String DEFAULT_DAYURL = "http://api.openweathermap.org/data/2.5/weather?";
     static private final String QUERY_PARAM = "q";
