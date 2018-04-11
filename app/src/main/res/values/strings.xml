@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">NewWeatherApp</string>
+
+    <string name="meteo_icon" translatable="false">Meteo Icon</string>
+    <string name="temp_max" translatable="false">Temp Max</string>
+    <string name="temp_min" translatable="false">Temp</string>
+    <string name="umidity">Umidity:</string>
+    <string name="settings_activity">Settings</string>
+    <string name="key_centigradi">°C celsius</string>
+    <string name="key_fahrenheit">°F fahrenheit</string>
+    <string name="dialog_editText">Set location</string>
+    <string name="loc">Location</string>
+    <string name="location" translatable="false">location</string>
+    <string name="chek_update_gps">Active gps position</string>
+    <string name="autoupdate" translatable="false">chek_autoupdate</string>
+    <string name="update_enable">Enable</string>
+    <string name="update_disable">Disable</string>
+    <string name="listpref_title">Units</string>
+    <string name="listpref_key" translatable="false">units</string>
+    <string name="listpref_summary">Temperature Units</string>
+    <string name="website" translatable="false">website</string>
+    <string name="sunrise">Sunrise:</string>
+    <string name="sunset">Sunset:</string>
+    <string name="update">Update</string>
+    <string name="pressure">"Pressure:   "</string>
+    <string name="wind">Wind:</string>
+    <string name="settings">Settings</string>
+    <string name="update_menu">Update</string>
+    <string name="website_title">WebSite</string>
+    <string name="entryValues">entryValues</string>
+    <string name="forecast">Forecast</string>
+
+    <string name="gps_permission_ok">Permission OK</string>
+    <string name="gps_permission_required">Attivare gps per la localizzazione</string>
+    <string name="gps_ok">OK</string>
+    <string name="gps_unavailable">gps non disponibile</string>
+    <string name="gps_permission_granted">gps permission granted</string>
+    <string name="gps_permission_denied">gps permission missing</string>
+    <string name="no_gps_alert_dialog">Would you like to enable GPS</string>
+    <string name="go_to_gps_settings">Go to Settings...</string>
+    <string name="no_gps_permission">Cancel</string>
+    <string name="gps_settings_title">Gps Location</string>
+</resources>

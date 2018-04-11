@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewWeatherApp</string>
+    <string name="pressure">Pressione:</string>
+    <string name="umidity">Umidita\':</string>
+    <string name="key_centigradi">°C centigradi</string>
+    <string name="key_fahrenheit">°F fahrenheit</string>
+    <string name="listpref_summary">Unita\' di misura</string>
+    <string name="sunrise">Alba:</string>
+    <string name="sunset">Tramonto</string>
+    <string name="update">Aggiorna</string>
+    <string name="update_menu">Aggiorna</string>
+    <string name="wind">Vento:</string>
+    <string name="settings">Impostazioni</string>
+    <string name="settings_activity">Impostazioni</string>
+    <string name="loc">Posizione</string>
+    <string name="chek_update_gps">Attiva localizzazione</string>
+    <string name="listpref_title">Unita\' di misura</string>
+    <string name="website_title">Sito Web</string>
+    <string name="update_enable">Abilitato</string>
+    <string name="update_disable">Disabilitato</string>
+    <string name="dialog_editText">Inserisci localita\'</string>
+    <string name="entryValues">entryValues</string>
+    <string name="forecast">Previsioni</string>
+    <string name="no_gps_alert_dialog">Vuoi abilitare il GPS?</string>
+    <string name="go_to_gps_settings">Vai al setting GPS</string>
+    <string name="no_gps_permission">No</string>
+    <string name="gps_settings_title">Gps Location</string>
+</resources>

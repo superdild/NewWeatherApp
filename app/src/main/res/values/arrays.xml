@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entryValues">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+
+    <string-array name="keys">
+        <item>@string/key_centigradi</item>
+        <item>@string/key_fahrenheit</item>
+    </string-array>
+
+
+</resources>

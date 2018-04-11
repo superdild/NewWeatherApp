@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:dialogTitle="@string/dialog_editText"
+        android:gravity="center"
+        android:key="@string/location"
+        android:maxLines="1"
+        android:summary="@string/dialog_editText"
+        android:title="@string/loc"
+
+        />
+
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="update_gps"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="@string/chek_update_gps" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/autoupdate"
+        android:summaryOff="@string/update_disable"
+        android:summaryOn="@string/update_enable"
+        android:title="@string/chek_update_gps"
+
+        />
+
+
+    <ListPreference
+        android:defaultValue="metric"
+        android:entries="@array/keys"
+        android:entryValues="@array/entryValues"
+        android:key="@string/listpref_key"
+        android:summary="@string/listpref_summary"
+        android:title="@string/listpref_title" />
+
+
+    <PreferenceCategory android:title="Link">
+        <Preference
+            android:key="@string/website"
+            android:title="@string/website_title"
+            android:summary="openweathermap.org">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://openweathermap.org/" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
