@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/single_item_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -20,56 +21,62 @@
     <TextView
         android:id="@+id/single_item_data"
         style="@style/Base.TextAppearance.AppCompat.Title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:gravity="center"
         android:text="Data"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toStartOf="@+id/single_item_temp_min"
+        app:layout_constraintBaseline_toBaselineOf="@+id/single_item_temp_min"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/single_item_icon"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/single_item_temp_min" />
 
     <TextView
         android:id="@+id/single_item_temp_min"
         style="@style/Base.TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Min"
         android:textColor="@android:color/holo_blue_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/single_item_data"
+        app:layout_constraintBottom_toTopOf="@+id/single_item_temp_max"
+        app:layout_constraintStart_toEndOf="@+id/single_item_icon"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/single_item_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
         style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
         android:text="description"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/single_item_temp_max"
+        app:layout_constraintBaseline_toBaselineOf="@+id/single_item_temp_max"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/single_item_icon"
-        app:layout_constraintTop_toBottomOf="@+id/single_item_data" />
+        app:layout_constraintStart_toEndOf="@+id/single_item_temp_max" />
 
     <TextView
         android:id="@+id/single_item_temp_max"
         style="@style/Base.TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Max"
         android:textColor="@android:color/holo_red_dark"
-        app:layout_constraintStart_toStartOf="@+id/single_item_temp_min"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/single_item_icon"
         app:layout_constraintTop_toBottomOf="@+id/single_item_temp_min" />
 
 
