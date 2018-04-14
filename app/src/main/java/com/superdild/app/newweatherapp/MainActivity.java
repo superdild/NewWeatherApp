@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private final static String BUNDLE_SECOND = "second_bundle";
     private final static String BUNDLE_KEY = "savedInstanceState";
 
-    LoaderManager.LoaderCallbacks<WeatherDay> callbacks = MainActivity.this;
+  //  LoaderManager.LoaderCallbacks<WeatherDay> callbacks = MainActivity.this;
     ActivityMainBinding mBinding;
     Bundle bundle;
     String language, unit;
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         Log.v("StartLaunchLoader " + city, "url: " + url.toString());
         mBinding.progressBar.setVisibility(View.VISIBLE);
         bundle.putString(BUNDLE_ID, daylyUrl.toString());
-        getLoaderManager().restartLoader(LOADER_ID, bundle, callbacks);
+        getLoaderManager().restartLoader(LOADER_ID, bundle, this);//callbacks);
         bundle.putString(BUNDLE_SECOND, url.toString());
         getLoaderManager().restartLoader(LOADER_SECOND, bundle, stringLoaderCallbacks);
     }
@@ -191,6 +191,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
             case (R.id.update):
                 String localita = PreferenceManager.getDefaultSharedPreferences(this).getString("location", null);
+                if (localita!=null)
                 startLaunchLoader(localita);
                 break;
 
@@ -208,6 +209,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         switch (s) {
             case "location":
                 String localita = sharedPreferences.getString("location", null);
+                if (localita!=null)
                 startLaunchLoader(localita);
                 break;
             case "units":
